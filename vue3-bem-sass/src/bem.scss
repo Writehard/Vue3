@@ -1,0 +1,23 @@
+$namespcae:'xm' !default;
+$block-sel:'-' !default;
+$elem-sel:'__' !default;
+$mod-sel:'--' !default;
+
+@mixin b($block){
+    $B:#{$namespcae + $block-sel + $block}
+        .#{$B} {
+            @content;
+        }
+};
+@mixin e($el){
+    $selector:&;
+    #{$selector + $elem-el + $el}{
+        @content;
+    }
+};
+@mixin m($m){
+    $selector:&;
+    #{$selector + $mod-sel + $m}{
+        @content;
+    }
+};

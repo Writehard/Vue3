@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    // 使用插件
+    "types": ["unplugin-vue-define-options/macros-global"],
+  },
+  "include": ["vite.config.ts"]
+}
